@@ -14,6 +14,7 @@ Base de datos relacional completa para una plataforma de movilidad urbana (simil
 - Mecanismos de auditoría automática (triggers) y validación de reglas de negocio.
 - Vistas, procedimientos almacenados y una función de tarifa dinámica.
 - Consultas analíticas complejas listas para ser usadas por un científico de datos.
+- Notebook replicando las consultas análiticas en python, partiendo de los datos exportados a CSV.
 
 ## Modelo de Datos
 
@@ -141,6 +142,9 @@ Esto nos genera una tabla con varias columnas (features): `fecha`, `hora`, `dia_
 **Nota:** La imagen no contiene toda la tabla generada. También, hay que recordar que, para los días de la semana, tenemos que `domingo = 1` y `sabado = 7`.
 
 ## Notebook de análisis en Python
+
+He creado un **notebook de Jupyter** que replica las 5 consultas analíticas usando python, partiendo de los datos exportados a CSV. Puedes acceder a él pulsando pulsando en la isguiente imágen:
+
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Edvard-Pichardo/movilidad-urbana-analisis/blob/main/notebooks/analisis_movilidad_urbana.ipynb)
 
 ## Autor
