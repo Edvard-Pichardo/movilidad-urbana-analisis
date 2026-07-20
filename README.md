@@ -148,7 +148,7 @@ Esto nos genera una tabla con varias columnas (features): `fecha`, `hora`, `dia_
 
 <p align="center">
   <img src="images/resultado4.png" width="500">
-  <img src="images/g6.png" width="500">
+  <img src="images/g6.png" width="600">
   <br>
   <em>Figura: Dataset temporal previo a realizar un análisis/modelo para predecir el número de viajes esperados la siguiente hora </em>
 </p>
