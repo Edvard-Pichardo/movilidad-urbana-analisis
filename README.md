@@ -18,7 +18,7 @@ Base de datos relacional completa para una plataforma de movilidad urbana (simil
 ## Modelo de Datos
 
 <p align="center">
-<img src="images/diagrama_er.png" width="800">
+<img src="images/diagrama_er.png" width="900">
 </p>
 
 - **Conductores** y **Vehículos** (relación 1:N).
