@@ -65,7 +65,9 @@ El script `07_Consultas_Analiticas.sql` contiene cinco consultas:
 
 Las primeras filas corresponden a las horas pico (típicamente 7-9 AM y 5-7 PM). Las últimas muestran las horas valle (madrugada).
 
-
+<p align="center">
+<img src="images/resultado1.png" width="300">
+</p>
 
 ### Riesgo de abandono – conductores con caída intermensual >20%.
 3. **Clientes VIP** – cuartil superior de gasto.
