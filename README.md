@@ -88,7 +88,7 @@ Las primeras filas corresponden a las horas pico (típicamente 7-9 AM y 5-7 PM).
 Esto nos proporciona una lista de conductores, los meses afectados y el porcentaje exacto de caída. Si un conductor aparece varias veces es porque tuvo varios meses malos.
 
 <p align="center">
-  <img src="images/r2.png" width="400">
+  <img src="images/r2.png" width="600">
   <img src="images/g2.png" width="500">
   <br>
   <em>Figura: Conductores con caída intersemestral del 5% (análisis de 4 meses) </em>
