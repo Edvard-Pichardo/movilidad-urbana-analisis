@@ -16,38 +16,39 @@ FROM (
 ) sub
 CROSS JOIN (SELECT @rank := 0) init;
 
--- Conductores con caída intermensual > 20 %
+-- Conductores con caída intermensual > 5%
 SELECT
-  t.id_conductor,
+  vm1.id_conductor,
   CONCAT(c.nombre, ' ', c.apellido) AS nombre_conductor,
-  t.mes,
-  t.viajes,
-  t.viajes_mes_anterior,
-  ROUND((t.viajes - t.viajes_mes_anterior) / t.viajes_mes_anterior * 100, 2) AS cambio_porcentual
+  vm1.mes,
+  vm1.viajes,
+  vm2.viajes AS viajes_mes_anterior,
+  ROUND((vm1.viajes - vm2.viajes) / vm2.viajes * 100, 2) AS cambio_porcentual
 FROM (
   SELECT
-    id_conductor,
-    mes,
-    viajes,
-    @prev_viajes AS viajes_mes_anterior,
-    @prev_conductor := id_conductor,
-    @prev_viajes := viajes
-  FROM (
-    SELECT
-      ve.id_conductor,
-      DATE_FORMAT(v.fecha_hora_inicio, '%Y-%m') AS mes,
-      COUNT(*) AS viajes
-    FROM Viajes v
-    JOIN Vehiculos ve ON v.id_vehiculo = ve.id_vehiculo
-    WHERE v.estado = 'completado'
-    GROUP BY ve.id_conductor, mes
-    ORDER BY ve.id_conductor, mes
-  ) sorted,
-  (SELECT @prev_conductor := '', @prev_viajes := 0) init
-) t
-JOIN Conductores c ON t.id_conductor = c.id_conductor   
-WHERE t.viajes_mes_anterior > 0
-  AND (t.viajes - t.viajes_mes_anterior) / t.viajes_mes_anterior < -0.20
+    ve.id_conductor,
+    DATE_FORMAT(v.fecha_hora_inicio, '%Y-%m') AS mes,
+    COUNT(*) AS viajes
+  FROM Viajes v
+  JOIN Vehiculos ve ON v.id_vehiculo = ve.id_vehiculo
+  WHERE v.estado = 'completado'
+  GROUP BY ve.id_conductor, mes
+) vm1
+LEFT JOIN (
+  SELECT
+    ve.id_conductor,
+    DATE_FORMAT(v.fecha_hora_inicio, '%Y-%m') AS mes,
+    COUNT(*) AS viajes
+  FROM Viajes v
+  JOIN Vehiculos ve ON v.id_vehiculo = ve.id_vehiculo
+  WHERE v.estado = 'completado'
+  GROUP BY ve.id_conductor, mes
+) vm2
+  ON vm1.id_conductor = vm2.id_conductor
+  AND vm2.mes = DATE_FORMAT(DATE_SUB(CONCAT(vm1.mes, '-01'), INTERVAL 1 MONTH), '%Y-%m')
+JOIN Conductores c ON vm1.id_conductor = c.id_conductor
+WHERE vm2.viajes IS NOT NULL
+  AND (vm1.viajes - vm2.viajes) / vm2.viajes < -0.05
 ORDER BY cambio_porcentual ASC;
 
 -- Segmentación de clientes de alto valor (cuartil superior)
