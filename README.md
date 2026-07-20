@@ -67,7 +67,10 @@ El script `07_Consultas_Analiticas.sql` contiene cinco consultas:
 Las primeras filas corresponden a las horas pico (típicamente 7-9 AM y 5-7 PM). Las últimas muestran las horas valle (madrugada).
 
 <p align="center">
-<img src="images/resultado1.png" width="300">
+  <img src="images/resultado1.png" width="300">
+  <img src="images/g1" width="300">
+  <br>
+  <em>Figura: Horas pico de los viajes registradoas en la base de datos </em>
 </p>
 
 **Nota:** La imagen no contiene toda la tabla generada. 
