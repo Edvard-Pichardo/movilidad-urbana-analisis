@@ -122,7 +122,21 @@ Esto nos devuelve un conjunto de viajes sospechosos, con su duración, distancia
 </p>
 
 
-5. **Dataset temporal** – series con demanda horaria y valor de la hora anterior.
+### Dataset temporal – series con demanda horaria y valor de la hora anterior.
+
+**Objetivo:** Construir una tabla de series temporales lista para ser usada en un modelo de machine learning (regresión, LSTM, etc.). Cada fila representa una hora de un día y contiene no solo la demanda actual, sino también la demanda de la hora anterior.
+
+**Sirve para:**
+
+- Forecasting de demanda: predecir cuántos viajes se esperan en la próxima hora.
+- Optimización de recursos: enviar conductores a zonas de alta demanda anticipada.
+- Evaluación de campañas: medir si una promoción aumentó la demanda en ciertas horas.
+
+Esto nos genera una tabla con varias columnas (features): `fecha`, `hora`, `dia_semana`, `num_viajes`, `tarifa_promedio`, `conductores_unicos` y el valor objetivo/feature `viajes_hora_anterior`. Esto podría tomarse como una base para agregar más características (días festivos, clima) y entrenar un modelo predictivo.
+
+<p align="center">
+<img src="images/resultado4.png" width="500">
+</p>
 
 ## 🛠️ Tecnologías
 
