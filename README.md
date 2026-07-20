@@ -81,11 +81,29 @@ Las primeras filas corresponden a las horas pico (típicamente 7-9 AM y 5-7 PM).
 - Modelo de predicción de abandono (churn).
 - Análisis de estacionalidad o efectos de cambios en políticas.
 
+Esto nos proporciona una lista de conductores, los meses afectados y el porcentaje exacto de caída. Si un conductor aparece varias veces es porque tuvo varios meses malos.
+
 <p align="center">
 <img src="images/resultado2.png" width="500">
 </p>
 
-3. **Clientes VIP** – cuartil superior de gasto.
+### Clientes VIP – cuartil superior de gasto.
+
+**Objetivo:** Clasificar a los clientes según su gasto total y seleccionar el 25% que más consume. Es una segmentación clásica VIP.
+
+**Sirve para:**
+
+- Campañas de fidelización dirigidas a los mejores clientes.
+- Análisis RFM (Recency, Frequency, Monetary).
+- Definir umbrales para un programa de lealtad.
+
+Esto nos devuelve una tabla con los clientes VIP (cuartil superior) con su gasto total y el número de orden. Se confirma que representan aproximadamente el 25% de la base de clientes que hicieron viajes.
+
+<p align="center">
+<img src="images/resultado3.png" width="300">
+</p>
+
+
 4. **Viajes anómalos** – velocidad > media + 2σ (posibles errores de GPS).
 5. **Dataset temporal** – series con demanda horaria y valor de la hora anterior.
 
