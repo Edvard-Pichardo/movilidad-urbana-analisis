@@ -103,8 +103,25 @@ Esto nos devuelve una tabla con los clientes VIP (cuartil superior) con su gasto
 <img src="images/resultado3.png" width="500">
 </p>
 
+**Nota:** La imagen no contiene toda la tabla generada. 
 
-4. **Viajes anómalos** – velocidad > media + 2σ (posibles errores de GPS).
+### Viajes anómalos – velocidad > media + 2σ (posibles errores de GPS).
+
+**Objetivo:**  Encontrar viajes cuya velocidad promedio (km/h) es mayor que la media más dos desviaciones estándar. Estos valores atípicos pueden indicar errores de GPS, comportamientos fraudulentos o condiciones inusuales.
+
+**Sirve para:**
+
+- Limpieza de datos: antes de entrenar modelos, es vital identificar y tratar outliers.
+- Control de calidad: si un conductor reporta distancias irreales, se puede investigar.
+- Feature engineering: crear una bandera binaria “viaje_anómalo”.
+
+Esto nos devuelve un conjunto de viajes sospechosos, con su duración, distancia y velocidad calculada. Como generé la base de datos a partir de datos aleatorios puede que no aparezcan muchos (o ninguno como es mi caso); si se desea poblar la consulta, se pueden insertar manualmente algunos viajes con velocidades extremas.
+
+<p align="center">
+<img src="images/resultado5.png" width="500">
+</p>
+
+
 5. **Dataset temporal** – series con demanda horaria y valor de la hora anterior.
 
 ## 🛠️ Tecnologías
