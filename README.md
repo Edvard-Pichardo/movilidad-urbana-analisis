@@ -140,8 +140,8 @@ Esto nos genera una tabla con varias columnas (features): `fecha`, `hora`, `dia_
 
 **Nota:** La imagen no contiene toda la tabla generada. También, hay que recordar que, para los días de la semana, tenemos que `domingo = 1` y `sabado = 7`.
 
-## 📓 Notebook de análisis en Python (Google Colab)
-[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tu-usuario/movilidad-urbana-analisis/blob/main/notebooks/analisis_movilidad.ipynb)
+## Notebook de análisis en Python
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Edvard-Pichardo/movilidad-urbana-analisis/blob/main/notebooks/analisis_movilidad_urbana.ipynb)
 
 ## Autor
 
