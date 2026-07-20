@@ -17,7 +17,9 @@ Base de datos relacional completa para una plataforma de movilidad urbana (simil
 
 ## Modelo de Datos
 
-![Diagrama ER simplificado](images/diagrama_er.png)
+<p align="center">
+<img src="images/diagrama_er.png" width="600">
+</p>
 
 - **Conductores** y **Vehículos** (relación 1:N).
 - **Clientes** que solicitan **Viajes**.
