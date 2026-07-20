@@ -53,7 +53,7 @@ Cada tabla incluye índices diseñados para acelerar las consultas analíticas m
 
 El script `07_Consultas_Analiticas.sql` contiene cinco consultas:
 
-### Horas pico
+### Horas pico – ranking de horas con más viajes.
 
 **Objetivo:** Identificar las horas del día con mayor número de viajes completados, ordenadas de mayor a menor, y asignar un ranking.
 
@@ -69,7 +69,24 @@ Las primeras filas corresponden a las horas pico (típicamente 7-9 AM y 5-7 PM).
 <img src="images/resultado1.png" width="300">
 </p>
 
+**Nota:** La imagen no contiene toda la tabla generada. 
+
 ### Riesgo de abandono – conductores con caída intermensual >20%.
+
+**Objetivo:**  Detectar conductores que redujeron significativamente su actividad de un mes al siguiente. Un descenso mayor al 20% puede ser señal de insatisfacción, riesgo de abandono o cambio a otra plataforma.
+
+**Sirve para:**
+
+- Retención de talento: recursos humanos puede contactar a estos conductores con incentivos.
+- Modelo de predicción de abandono (churn).
+- Análisis de estacionalidad o efectos de cambios en políticas.
+
+<p align="center">
+<img src="images/resultado2.png" width="300">
+</p>
+
+**Nota:** La imagen no contiene toda la tabla generada. 
+
 3. **Clientes VIP** – cuartil superior de gasto.
 4. **Viajes anómalos** – velocidad > media + 2σ (posibles errores de GPS).
 5. **Dataset temporal** – series con demanda horaria y valor de la hora anterior.
