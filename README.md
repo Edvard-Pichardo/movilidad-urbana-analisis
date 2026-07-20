@@ -107,7 +107,10 @@ Esto nos proporciona una lista de conductores, los meses afectados y el porcenta
 Esto nos devuelve una tabla con los clientes VIP (cuartil superior) con su gasto total y el número de orden. Se confirma que representan aproximadamente el 25% de la base de clientes que hicieron viajes.
 
 <p align="center">
-<img src="images/resultado3.png" width="500">
+  <img src="images/resultado3.png" width="400">
+  <img src="images/g4.png" width="300">
+  <br>
+  <em>Figura: Conductores con caída intersemestral del 5% (análisis de 4 meses) </em>
 </p>
 
 **Nota:** La imagen no contiene toda la tabla generada. 
