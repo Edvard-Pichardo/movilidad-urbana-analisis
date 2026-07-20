@@ -138,23 +138,7 @@ Esto nos genera una tabla con varias columnas (features): `fecha`, `hora`, `dia_
 <img src="images/resultado4.png" width="500">
 </p>
 
-## 🛠️ Tecnologías
 
-- MySQL 5.7+ (InnoDB)
-- Funciones de agregación, subconsultas correlacionadas y variables de sesión.
-- Triggers `BEFORE INSERT/UPDATE` para reglas de negocio.
+## Autor
 
-## 📈 Notas para Arquitectos de Datos y Reclutadores
-
-- La elección de índices cubre las consultas más costosas.
-- Se utilizó una tabla de auditoría independiente para no sobrecargar la tabla transaccional.
-- Los procedimientos devuelven resultados paginados (con `LIMIT`) para integración con dashboards.
-- Las consultas analíticas no dependen de extensiones propietarias; pueden adaptarse fácilmente a PostgreSQL o SQL Server.
-
-## 👤 Autor
-
-[Tu nombre] – [Tu perfil de LinkedIn/GitHub]
-
-## 📄 Licencia
-
-MIT – Libre uso, modificación y distribución.
+Nombre: Pichardo Rico Cristian Eduardo
