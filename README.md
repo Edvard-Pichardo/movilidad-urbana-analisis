@@ -71,9 +71,9 @@ Las primeras filas corresponden a las horas pico (típicamente 7-9 AM y 5-7 PM).
 
 **Nota:** La imagen no contiene toda la tabla generada. 
 
-### Riesgo de abandono – conductores con caída intermensual >20%.
+### Riesgo de abandono – conductores con caída intermensual > 5%.
 
-**Objetivo:**  Detectar conductores que redujeron significativamente su actividad de un mes al siguiente. Un descenso mayor al 20% puede ser señal de insatisfacción, riesgo de abandono o cambio a otra plataforma.
+**Objetivo:**  Detectar conductores que redujeron significativamente su actividad de un mes al siguiente. Un descenso mayor al 5% puede ser señal de insatisfacción, riesgo de abandono o cambio a otra plataforma. Esto puede variar dependiendo algunos factores, en bases de datos más grandes, este factor podría aumentarse para mostrar una caída intermensual del 20%. Por cuesiones de cómo está estructurada esta base de datos, se dejará en 5%.
 
 **Sirve para:**
 
@@ -84,7 +84,7 @@ Las primeras filas corresponden a las horas pico (típicamente 7-9 AM y 5-7 PM).
 Esto nos proporciona una lista de conductores, los meses afectados y el porcentaje exacto de caída. Si un conductor aparece varias veces es porque tuvo varios meses malos.
 
 <p align="center">
-<img src="images/resultado2.png" width="500">
+<img src="images/r2.png" width="500">
 </p>
 
 ### Clientes VIP – cuartil superior de gasto.
