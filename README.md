@@ -82,10 +82,8 @@ Las primeras filas corresponden a las horas pico (típicamente 7-9 AM y 5-7 PM).
 - Análisis de estacionalidad o efectos de cambios en políticas.
 
 <p align="center">
-<img src="images/resultado2.png" width="300">
+<img src="images/resultado2.png" width="500">
 </p>
-
-**Nota:** La imagen no contiene toda la tabla generada. 
 
 3. **Clientes VIP** – cuartil superior de gasto.
 4. **Viajes anómalos** – velocidad > media + 2σ (posibles errores de GPS).
