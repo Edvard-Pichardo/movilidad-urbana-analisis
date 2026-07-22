@@ -161,6 +161,9 @@ He creado un **notebook de Jupyter** que replica las 5 consultas analíticas usa
 
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Edvard-Pichardo/movilidad-urbana-analisis/blob/main/notebooks/analisis_movilidad_urbana.ipynb)
 
-## Autor
+# Autor
 
-Pichardo Rico Cristian Eduardo
+## Edvard Pichardo
+
+**Licenciado en Física**  
+Universidad Nacional Autónoma de México (UNAM)
