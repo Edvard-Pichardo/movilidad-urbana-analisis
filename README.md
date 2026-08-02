@@ -163,7 +163,7 @@ He creado un **notebook de Jupyter** que replica las 5 consultas analíticas usa
 
 # Autor
 
-## Edvard Pichardo
+## Eduardo Pichardo
 
 **Licenciado en Física**  
 Universidad Nacional Autónoma de México (UNAM)
