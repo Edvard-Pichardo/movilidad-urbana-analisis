@@ -276,6 +276,7 @@ También puedes [verlo en GitHub](notebooks/analisis_movilidad_urbana.ipynb).
 ## Autor y licencia
 
 **Cristian Eduardo Pichardo Rico**
+
 Egresado de la Licenciatura en Física, Facultad de Ciencias, UNAM
 GitHub: [@Edvard-Pichardo](https://github.com/Edvard-Pichardo)
 
